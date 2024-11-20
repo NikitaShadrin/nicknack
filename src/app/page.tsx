@@ -1,5 +1,5 @@
 "use client";
-import { easeIn, easeInOut, easeOut, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import toast, { Toaster } from 'react-hot-toast';
 
 export default function Home() {
@@ -24,10 +24,10 @@ export default function Home() {
         className="mb-64 mt-24"
       >
       <p className="mb-24">Hi! <br>
-      </br>My name is <strong>Nick</strong> and what you're looking at is a portfolio website
+      </br>My name is <strong>Nick</strong> and what you&#39;re looking at is a portfolio website
       that is comprised of this landing page as well as other mini projects focusing on specific
       aspects of web dev!</p>
-      <p>If you're seeing this I'm probably available for hire so...
+      <p>If you&#39;re seeing this I&#39;m probably available for hire so...
       </p>
       </motion.div>
       <motion.div
@@ -68,8 +68,8 @@ export default function Home() {
         className="mb-24"
       >
       <h2 className="mb-6 text-6xl font-light uppercase tracking-widest text-accent">What drives me</h2>
-      <p>I strive for more than simply going through the motions. It's difficult to motivate myself when
-        what I'm doing isn't reinforced with some kind of meaning, a deeper interest or purpose. This is as true for 
+      <p>I strive for more than simply going through the motions. It&#39;s difficult to motivate myself when
+        what I&#39;m doing isn&#39;t reinforced with some kind of meaning, a deeper interest or purpose. This is as true for 
         mundane activities like exercise and brushing teeth, as it is with my work.
       </p>
       </motion.div>
@@ -82,7 +82,7 @@ export default function Home() {
       >
       <h3 className="text-5xl font-thin uppercase tracking-widest text-accent">Creativity</h3>
       <p>The biggest inspiration of all is simply seeing other people be passionate and creative. 
-        I've lost count of how many times I encountered other people's creative work and felt almost 
+        I&#39;ve lost count of how many times I encountered other people&#39;s creative work and felt almost 
         obligated to match that passion for their craft. <br />
         Seeing the power within human creativity, the way it can bring together communities and make the world better 
         is one of the main reasons I still do the things I do.
@@ -98,7 +98,7 @@ export default function Home() {
       <h2 className="text-5xl font-thin uppercase tracking-widest text-accent">Music</h2>
       <p>A personal favorite of mine when it comes to art forms. I sing, play guitar and 
         produce my own music not just because I like the cool sounds I can make or because 
-        some chord progressions sound pretty. It's another language. It's a different way 
+        some chord progressions sound pretty. It&#39;s another language. It&#39;s a different way 
         to express myself and process my life through it. <br />
         As a lover of all things audio I even made a bit of money as a freelancer doing various 
         audio editing. 
@@ -113,16 +113,16 @@ export default function Home() {
       >
       <h2 className="text-5xl font-thin uppercase tracking-widest text-accent">Programming</h2>
       <p>I was first interested in code some time at the end of highschool. It seemed kinda fun and 
-        I didn't struggle with it as much as most other people so after some deliberation I went to get 
-        a bachelor's in the field. Long story short I lost all motivation, started questioning if I even liked 
-        coding to begin with or if I did it "just because". It took some time soul searching to realize that I 
-        was way too in my own head about it all. Now, getting back into it I'm actually excited to code again. 
+        I didn&#39;t struggle with it as much as most other people so after some deliberation I went to get 
+        a bachelor&#39;s in the field. Long story short I lost all motivation, started questioning if I even liked 
+        coding to begin with or if I did it &#34;just because&#34;. It took some time soul searching to realize that I 
+        was way too in my own head about it all. Now, getting back into it I&#39;m actually excited to code again. 
         I hope to jumpstart my programming path once again. This time with proper self direction. Making cool things 
         and contributing to open source projects.
       </p>
       </motion.div>
       <p>Thank you for reading! I hope you got to know me a little bit through this page
-        and you may be interested in some of the other tabs up above so check em out if you haven't!
+        and you may be interested in some of the other tabs up above so check em out if you haven&#39;t!
       </p>
     </main>
   );
