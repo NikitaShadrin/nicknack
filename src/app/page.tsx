@@ -1,101 +1,129 @@
-import Image from "next/image";
+"use client";
+import { easeIn, easeInOut, easeOut, motion } from 'framer-motion';
+import toast, { Toaster } from 'react-hot-toast';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+    <main className="leading-loose max-w-4xl mx-auto px-8">
+      <Toaster
+        position="top-center"
+        reverseOrder={false}
+        toastOptions={{
+          className: 'custom-toast',
+          duration: 2000,
+          success: {
+            className: 'custom-toast-success',
+          },
+        }}
+      />
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="mb-64 mt-24"
+      >
+      <p className="mb-24">Hi! <br>
+      </br>My name is <strong>Nick</strong> and what you're looking at is a portfolio website
+      that is comprised of this landing page as well as other mini projects focusing on specific
+      aspects of web dev!</p>
+      <p>If you're seeing this I'm probably available for hire so...
+      </p>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 160 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="mb-6"
+      >
+        <h2 className='text-6xl font-light uppercase tracking-widest text-accent'>Hire Me!</h2>
+        <p>if you need a web developer experienced in 
+        <strong> React.js, TypeScript, Tailwind, Next.js, GIT and using restful APIs </strong>
+        as well as having entry level knowledge of SQL and Python</p>      
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 160 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="mb-64"
+      >
+      <p>Contact me through this email: 
+        <span onClick={() => {
+          navigator.clipboard.writeText("shadrinnikita@gmail.com");
+          toast.success("Text copied to clipboard!");
+        }} 
+        className="text-accent hover:underline"> shadrinnikita@gmail.com</span></p>
+      <p className='mb-8'>Or visit my profile on <a href="https://github.com/NikitaShadrin" className="text-accent hover:underline">Github</a></p>
+      <p>Thanks to my other hobbies and interests I also have varying experience in:
+        Photoshop, Ableton Live, DaVinci Resolve, Blender, Godot Engine, playing guitar as well as writing and producing music.
+      </p>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 120 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="mb-24"
+      >
+      <h2 className="mb-6 text-6xl font-light uppercase tracking-widest text-accent">What drives me</h2>
+      <p>I strive for more than simply going through the motions. It's difficult to motivate myself when
+        what I'm doing isn't reinforced with some kind of meaning, a deeper interest or purpose. This is as true for 
+        mundane activities like exercise and brushing teeth, as it is with my work.
+      </p>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="mb-24"
+      >
+      <h3 className="text-5xl font-thin uppercase tracking-widest text-accent">Creativity</h3>
+      <p>The biggest inspiration of all is simply seeing other people be passionate and creative. 
+        I've lost count of how many times I encountered other people's creative work and felt almost 
+        obligated to match that passion for their craft. <br />
+        Seeing the power within human creativity, the way it can bring together communities and make the world better 
+        is one of the main reasons I still do the things I do.
+      </p>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="mb-12"
+      >
+      <h2 className="text-5xl font-thin uppercase tracking-widest text-accent">Music</h2>
+      <p>A personal favorite of mine when it comes to art forms. I sing, play guitar and 
+        produce my own music not just because I like the cool sounds I can make or because 
+        some chord progressions sound pretty. It's another language. It's a different way 
+        to express myself and process my life through it. <br />
+        As a lover of all things audio I even made a bit of money as a freelancer doing various 
+        audio editing. 
+      </p>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="mb-12"
+      >
+      <h2 className="text-5xl font-thin uppercase tracking-widest text-accent">Programming</h2>
+      <p>I was first interested in code some time at the end of highschool. It seemed kinda fun and 
+        I didn't struggle with it as much as most other people so after some deliberation I went to get 
+        a bachelor's in the field. Long story short I lost all motivation, started questioning if I even liked 
+        coding to begin with or if I did it "just because". It took some time soul searching to realize that I 
+        was way too in my own head about it all. Now, getting back into it I'm actually excited to code again. 
+        I hope to jumpstart my programming path once again. This time with proper self direction. Making cool things 
+        and contributing to open source projects.
+      </p>
+      </motion.div>
+      <p>Thank you for reading! I hope you got to know me a little bit through this page
+        and you may be interested in some of the other tabs up above so check em out if you haven't!
+      </p>
+    </main>
   );
 }
