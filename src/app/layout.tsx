@@ -57,7 +57,7 @@ export default function RootLayout({
           </nav>
         </header>
 
-        <main className="flex-grow text-center cotainer mx-auto my-8">
+        <main className="flex-grow text-center mx-auto my-8">
           {children}
         </main>
 
