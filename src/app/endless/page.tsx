@@ -36,6 +36,12 @@ export default function Home() {
   }, [page]);
 
   useEffect(() => {
+    if (window.innerHeight >= document.documentElement.scrollHeight) {
+      setPage((prev) => prev + 1);
+    }
+  }, []);
+
+  useEffect(() => {
     const handleScroll = () => {
       if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
         setPage((prev) => prev + 1);
