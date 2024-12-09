@@ -53,14 +53,13 @@ export default function Home() {
           style={{
             backgroundColor: item.backgroundColor,
             color: item.textColor,
-            width: '240px',
             height: `${item.height}px`,
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
             borderRadius: "16px",
           }}
-          className="shadow"
+          className="text-4xl font-bold active:scale-90 transition-transform duration-260 shadow"
         >
           {item.text}
         </div>

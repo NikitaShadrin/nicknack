@@ -1,4 +1,33 @@
-export const textOptions = ["Random", "Words", "To Fill", "The Cards", "For Now", "Nothing", "Something"];
-export const backgroundColors = ["#ff9999", "#99ccff", "#ccff99", "#ffcc99", "#99ffcc"];
-export const textColors = ["#000000", "#ffffff", "#333333", "#666666"];
-export const heightRange = [200, 600];
+export const textOptions = [  "apple",
+    "banana",
+    "cherry",
+    "oatmeal",
+    "elephant",
+    "falcon",
+    "grape",
+    "honeydew",
+    "island",
+    "jungle",
+    "kite",
+    "lemon",
+    "mountain",
+    "nectar",
+    "ocean",
+    "penguin",
+    "quartz",
+    "rainbow",
+    "sunflower",
+    "tigerpaws",
+    "umbrella",
+    "violet",
+    "waterfall",
+    "xylophone",
+    "yacht",
+    "zebra",
+    "infrared",
+    "dandelion",
+    "ember",
+    "forest",];
+export const backgroundColors = ["#F6E3D8", "#E8DFF5", "#DFF5E6", "#FDE2E2", "#FFE5D4", "#FFF9D9"];
+export const textColors = ["#3A1C47", "#2C3E24", "#2E2E2E"];
+export const heightRange = [200, 300];
