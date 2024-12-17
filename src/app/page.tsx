@@ -4,7 +4,7 @@ import toast, { Toaster } from 'react-hot-toast';
 
 export default function Home() {
   return (
-    <main className="leading-loose max-w-4xl mx-auto px-8">
+    <div className="leading-loose max-w-4xl mx-auto px-8">
       <Toaster
         position="top-center"
         reverseOrder={false}
@@ -80,7 +80,7 @@ export default function Home() {
         transition={{ duration: 0.6 }}
         className="mb-24"
       >
-      <h3 className="text-5xl font-thin uppercase tracking-widest text-accent">Creativity</h3>
+      <h2 className="text-5xl font-thin uppercase tracking-widest text-accent">Creativity</h2>
       <p>The biggest inspiration of all is simply seeing other people be passionate and creative. 
         I&#39;ve lost count of how many times I encountered other people&#39;s creative work and felt almost 
         obligated to match that passion for their craft. <br />
@@ -124,6 +124,6 @@ export default function Home() {
       <p>Thank you for reading! I hope you got to know me a little bit through this page
         and you may be interested in some of the other tabs up above so check em out if you haven&#39;t!
       </p>
-    </main>
+    </div>
   );
 }

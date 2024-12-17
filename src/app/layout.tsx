@@ -5,14 +5,14 @@ import Cursor from "../components/custom_cursor";
 import Link from 'next/link';
 import ThemeToggle from "@/components/theme_toggle";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
+const SometypeMono = localFont({
+  src: "./fonts/SometypeMono.ttf",
+  variable: "--font-sometype-mono",
   weight: "100 900",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
+const StickNoBills = localFont({
+  src: "./fonts/StickNoBills.ttf",
+  variable: "--font-stick-no-bills",
   weight: "100 900",
 });
 
@@ -29,12 +29,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
+        className={`${SometypeMono.variable} ${StickNoBills.variable} antialiased min-h-screen flex flex-col`}
       >
         <Cursor />
         <header className="bg-darker text-accent pt-2">
           <div className="container mx-auto flex items-center p-2">
-            <h1 className="text-6xl font-light text-center flex-grow">PROJECTS</h1>
+            <h2 className="text-6xl text-center flex-grow">PROJECTS</h2>
             <div className="flex items-center absolute right-6 group">
               <span className="opacity-0 transition-opacity duration-300 mr-2 group-hover:opacity-100">
                 a light switch :)

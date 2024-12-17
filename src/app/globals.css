@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffecd6; 
-  --foreground: #21181b;
-  --main-text: #25213e;  
-  --accent: #7a4a5a;  
-  --dark: #ffbaa4;     
-  --darker: #e0927b;    
+  --background: #fae3fe; 
+  --foreground: #22183e;
+  --main-text: #2a2c52;  
+  --accent: #492396;  
+  --dark: #f2d5f8;     
+  --darker: #edbef6;    
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,36 +16,40 @@
     --background: #20163d;
     --foreground: #ffffff;
     --main-text: #bfb9f0;
-    --accent: #EC255A;
-    --dark: #483972;
-    --darker: #412a82;
+    --accent: #ff2e74;
+    --dark: #21134a;
+    --darker: #322163;
   }
 }
 
 .light {
-  --background: #ffecd6; 
-  --foreground: #21181b;
-  --main-text: #25213e;  
-  --accent: #7a4a5a;  
-  --dark: #ffbaa4;     
-  --darker: #e0927b;    
+  --background: #fae3fe; 
+  --foreground: #22183e;
+  --main-text: #2a2c52;  
+  --accent: #492396;  
+  --dark: #f2d5f8;     
+  --darker: #edbef6;    
 }
 
 .dark {
   --background: #20163d;
   --foreground: #ffffff;
   --main-text: #bfb9f0;
-  --accent: #EC255A;
-  --dark: #483972;
-  --darker: #412a82;
+  --accent: #ff2e74;
+  --dark: #21134a;
+  --darker: #322163;
 }
 
 body {
   color: var(--main-text);
   background: var(--background);
-  font-family: var(--font-geist-sans);
+  font-family: var(--font-sometype-mono);
   font-size: 24px;
   cursor: none;
+}
+
+h2 {
+  font-family: var(--font-stick-no-bills);
 }
 
 a,
