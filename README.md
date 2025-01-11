@@ -19,4 +19,11 @@ To do:
 I decided not to go for masonry after all. Settled on a simiple grid but I'm glad I explored all the other options though it wasn't very fruitful.
 The cards no longer overlap and they bounce when clicked on for absolutely no reason. Incredible work, I have truly outdone myself.
 
-Onto the next third tab (releasing next week) which should be a bit more exciting
+Onto the next third tab which should be a bit more exciting.
+
+## Ver 1.2
+
+A basic little to do list that persists across sessions. Nothing extraordinary, though it's making me consider making a full blown app of my own...
+I've been using the basic microsoft to-do and there's some things that annoy me about it so it might be worth it!
+For now I'll stick to smaller projects though. The fourth tab will be an updates tab. I'm going to repurpose the README to actually talk about
+the project and its technical aspects in more detail while the updates tab on the site itself will be a sort of informal changelog.
