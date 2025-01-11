@@ -51,7 +51,7 @@ export default function RootLayout({
                 <Link href="/endless" className="block text-main_text py-4 px-6 transition duration-300 ease-in-out hover:text-accent hover:bg-darker">ENDLESS SCROLL</Link>
               </li>
               <li>
-                <Link href="/chat" className="block text-main_text py-4 px-6 transition duration-300 ease-in-out hover:text-accent hover:bg-darker">COMING SOON</Link>
+                <Link href="/todo" className="block text-main_text py-4 px-6 transition duration-300 ease-in-out hover:text-accent hover:bg-darker">TO DO</Link>
               </li>
             </ul>
           </nav>
