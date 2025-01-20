@@ -48,6 +48,9 @@ export default function RootLayout({
                 <Link href="/" className="block text-main_text py-4 px-6 transition duration-300 ease-in-out hover:text-accent hover:bg-darker">HOME</Link>
               </li>
               <li>
+                <Link href="/updates" className="block text-main_text py-4 px-6 transition duration-300 ease-in-out hover:text-accent hover:bg-darker">UPDATES</Link>
+              </li>
+              <li>
                 <Link href="/endless" className="block text-main_text py-4 px-6 transition duration-300 ease-in-out hover:text-accent hover:bg-darker">ENDLESS SCROLL</Link>
               </li>
               <li>
