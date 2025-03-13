@@ -30,5 +30,19 @@ algorithm to serve content to the user.
 In this implementation, the "content" is simple cards that have a set heigh, background color, text color and text that are generated within set parameters. It generates some cards on first load and each time the user reaches the end - the tab generates the next set amount of cards.
 
 2. To Do
-
 Each list item has: an id, text and completion status. Upon opening the tab the initial data is retrieved from local storage in case the user already has list items. To avoid altering local storage too early, there are checks in place to make sure the to do has mounted. After the check is passed all the typical CRUD functionality is available. Type in the task into the field, add it, mark it complete or delete it and it will all retain between sessions.
+
+### Installation
+ 
+ 1. Clone the repository
+ ```bash
+ git clone https://github.com/NikitaShadrin/nicknack
+ ```
+ 2. Install dependencies
+ ```bash
+ npm install
+ ```
+ 2. Run the development server
+ ```bash
+ npm run dev
+ ```
