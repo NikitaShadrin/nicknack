@@ -69,15 +69,15 @@ const TodoList = () => {
     return (
         <div className="p-4 bg-darker rounded-md shadow-md max-w-md mx-auto">
             <h2 className="text-2xl tracking-wider mb-4 text-center">My To-Do List</h2>
-            <div className="flex mb-4">
+            <div className="md:flex mb-4">
                 <input
                     type="text"
-                    className="p-2 border rounded mr-2 flex-grow"
+                    className="p-2 border rounded mr-2"
                     placeholder="Add new task..."
                     value={newTodoText}
                     onChange={(e) => setNewTodoText(e.target.value)}
                 />
-                <button onClick={handleAddTodo} className="bg-dark text-main_text py-2 px-4 rounded active:scale-90">Add</button>
+                <button onClick={handleAddTodo} className="bg-dark text-main_text mt-4 md:mt-0 py-2 px-4 rounded active:scale-90">Add</button>
             </div>
             <ul>
                 {todos.map((todo) => (

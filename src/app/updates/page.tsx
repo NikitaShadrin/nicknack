@@ -72,6 +72,23 @@ const UpdatesPage = () => {
             Though for now I&apos;ll stick to this website... I have been considering learning AWS and then using the fifth tab to redirect to a separate site built with it. Hmmm...
           </>
         )
+      }, {
+        version: "Ver 2.0",
+        content: (
+          <>
+            A small overhaul, changed the wording on the landing page, changed the way tabs work.
+            <br/>
+            I have much more interest in making standalone projects at this point so the projects will be divided in two. The mini projects built into NickNack 
+            will have their own dropdown tab labeled &quot;Minis&quot;. The larger projects now have their own tab which displays them and links to their repos & demos if available.
+            The mobile version actually kinda works now and doesn&apos;t look completely terrible, though I couldn&apos;t make a burger menu work &apos;exactly&apos; how I wanted so I scrapped it.
+            <br/>
+            The tabs are also reorganized in order of importance instead of chronology. 
+            For now the only projects that are linked are a mock landing page and a github repo finder but 
+            I have something way bigger planned that I may release with the intent public use
+            <br/>
+            I&apos;m pretty excited!
+          </>
+        )
       }].map(({ version, content }, index) => (
         <motion.div
           key={index}

@@ -5,11 +5,15 @@ import { useEffect, useState } from "react";
 const Cursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [clicking, setClicking] = useState(false);
+  const [isTouchDevice, setIsTouchDevice] = useState(false)
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       setPosition({ x: e.clientX, y: e.clientY });
     };
+
+    setIsTouchDevice('ontouchstart' in window || navigator.maxTouchPoints > 0)
+    if (isTouchDevice) return // this is jank but i'm tired and it works fine enough, fix later?
 
     const handleMouseDown = () => {
         setClicking(true);
@@ -32,7 +36,7 @@ const Cursor = () => {
       window.removeEventListener("mousemove", handleMouseMove);
       window.removeEventListener("mousedown", handleMouseDown);
     };
-  }, [position]);
+  }, [position, isTouchDevice]);
 
   return (
     <div
