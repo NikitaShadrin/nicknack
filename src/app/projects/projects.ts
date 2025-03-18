@@ -14,7 +14,7 @@ export const projects: Project[] = [
     image: "/images/lando_preview.png",
     repo: "https://github.com/NikitaShadrin/lando-project",
     demo: "",
-    description: "This is a description of Project 1. It showcases my skills in React and Tailwind CSS.",
+    description: "A mock landing page for a SAAS product to practice some React and Tailwind.",
   },
   {
     id: 2,
@@ -22,6 +22,6 @@ export const projects: Project[] = [
     image: "/images/gitrepofind_preview.png",
     repo: "https://github.com/NikitaShadrin/github_repo_pinner",
     demo: "https://nikitashadrin.github.io/github_repo_pinner",
-    description: "This is a description of Project 2. It highlights my ability to work with APIs and databases.",
+    description: "A page that lets you fetch and pin different Github repos. Decent practice for rest API mostly",
   },
 ];
